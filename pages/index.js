@@ -13,7 +13,7 @@ export default function Home() {
       }}
     >
       <Grid item sx={{ padding: 0 }} xs={12}>
-        <Box sx={{marginTop: 10}}>
+        <Box sx={{ marginTop: 8 }}>
           <Typography variant="h4" sx={{ color: "#00494d" }}>
             SPLI
           </Typography>
@@ -25,7 +25,11 @@ export default function Home() {
       <Grid
         item
         xs={12}
-        sx={{ justifyContent: "center", padding: 10, margin: "50px" }}
+        sx={{
+          justifyContent: "center",
+          padding: 10,
+          margin: "0 50px 50px 50px",
+        }}
       >
         <Splitter />
       </Grid>

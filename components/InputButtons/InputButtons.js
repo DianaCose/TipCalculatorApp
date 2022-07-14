@@ -1,4 +1,20 @@
-import { Button, Typography, Box, TextField } from "@mui/material";
+import { Button, Typography, Box, InputBase } from "@mui/material";
+import { styled } from "@mui/material/styles";
+
+const CustomInput = styled(InputBase)(() => ({
+  "&:focus": {
+    boxShadow: "#c5e4e7",
+    borderColor: "#c5e4e7",
+  },
+  "& .MuiInputBase-input": {
+    borderRadius: 4,
+    position: "relative",
+    border: "1px solid #ced4da",
+    fontSize: 16,
+    width: "auto",
+    padding: "10px 12px",
+  },
+}));
 
 export default function InputButtons({
   selectedTip,
@@ -89,10 +105,11 @@ export default function InputButtons({
           <Typography sx={{ color: "#ffffff" }}>50%</Typography>
         </Button>
 
-        <TextField
+        <CustomInput
           label="Custom"
+          defaultValue="Custom"
           value={customTip}
-          sx={{ background: "#f4fafa", width: 100, padding: 1, margin: 1 }}
+          sx={{ background: "#f4fafa", width: 100, margin: 1 }}
           onChange={handleCustomTip}
         />
       </Box>

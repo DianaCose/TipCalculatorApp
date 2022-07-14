@@ -10,7 +10,6 @@ export default function InputFields({ title, name, handleChange }) {
       </Typography>
       <TextField
         label={name}
-        defaultValue="0"
         variant="outlined"
         sx={{ marginBottom: 3, width: 310, background: "#f4fafa" }}
         onChange={handleChange}

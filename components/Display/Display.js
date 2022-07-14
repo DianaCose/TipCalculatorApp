@@ -1,9 +1,7 @@
 import { Grid, Box, Typography, Button } from "@mui/material";
 import EuroOutlinedIcon from "@mui/icons-material/EuroOutlined";
 
-
-export default function Display({amount, total, handleReset}) {
-
+export default function Display({ amount, total, handleReset }) {
   return (
     <Grid
       item
@@ -26,7 +24,7 @@ export default function Display({amount, total, handleReset}) {
           </Typography>
         </Box>
         <Box>
-          <Typography variant="h3" sx={{ color: "#93cdd2" }} id='amount'>
+          <Typography variant="h3" sx={{ color: "#93cdd2" }} id="amount">
             <EuroOutlinedIcon /> {amount}
           </Typography>
         </Box>
@@ -43,14 +41,17 @@ export default function Display({amount, total, handleReset}) {
           </Typography>
         </Box>
         <Box>
-          <Typography variant="h3" sx={{ color: "#93cdd2" }} id='total'>
+          <Typography variant="h3" sx={{ color: "#93cdd2" }} id="total">
             <EuroOutlinedIcon /> {total}
           </Typography>
         </Box>
       </Box>
 
-      <Box sx={{ background: "	#5e7a7d", margin: "20px 3px 0 3px" }}>
-        <Button sx={{ background: "#7f9c9f", width: "100%" }} onClick={handleReset}>
+      <Box sx={{ background: "#5e7a7d", margin: "100px 3px 0 3px" }}>
+        <Button
+          sx={{ background: "#7f9c9f", width: "100%" }}
+          onClick={handleReset}
+        >
           <Typography sx={{ color: "#00494d" }}>Reset</Typography>
         </Button>
       </Box>

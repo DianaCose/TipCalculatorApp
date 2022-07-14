@@ -1,4 +1,4 @@
-import { Paper, Grid, Box } from "@mui/material";
+import { Grid } from "@mui/material";
 import Display from "../Display/Display";
 import { useState } from "react";
 import InputButtons from "../InputButtons/InputButtons";
@@ -9,7 +9,7 @@ import PersonOutlinedIcon from "@mui/icons-material/PersonOutlined";
 export default function Splitter() {
   
   const [selectedTip, setSelectedTip] = useState(0);
-  const [customTip, setCustomTip] = useState('');
+  const [customTip, setCustomTip] = useState(0);
   const [bill, setBill] = useState(0);
   const [numberOfPeople, setNumberOfpeople] = useState(1);
 
@@ -54,6 +54,7 @@ export default function Splitter() {
           name={<PersonOutlinedIcon sx={{ color: "#7f9c9f" }} />}
         />
       </Grid>
+
       <Display
         amount={amount}
         total={total}
@@ -66,6 +67,7 @@ export default function Splitter() {
           console.log("RESET");
         }}
       />
+
     </Grid>
   );
 }
