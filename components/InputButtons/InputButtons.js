@@ -25,7 +25,12 @@ export default function InputButtons({
   return (
     <Box sx={{ marginBottom: 3 }}>
       <Typography
-        sx={{ textAlign: "start", marginBottom: 1, color: "#7f9c9f" }}
+        sx={{
+          textAlign: "start",
+          marginBottom: 1,
+          marginLeft: 1,
+          color: "#7f9c9f",
+        }}
       >
         Select Tip %
       </Typography>
